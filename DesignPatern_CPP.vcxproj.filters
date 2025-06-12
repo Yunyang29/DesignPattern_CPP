@@ -16,6 +16,7 @@
     <ClCompile Include="3.builder.cpp">
       <Filter>1.creational</Filter>
     </ClCompile>
+    <ClCompile Include="4.prototype.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2.abstract_factory.h">
@@ -28,5 +29,6 @@
     <ClInclude Include="3.builder.h">
       <Filter>1.creational</Filter>
     </ClInclude>
+    <ClInclude Include="4.prototype.h" />
   </ItemGroup>
 </Project>

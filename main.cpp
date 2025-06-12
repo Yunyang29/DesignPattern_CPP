@@ -1,6 +1,7 @@
 #include "1.factory_method.h"
 #include "2.abstract_factory.h"
 #include "3.builder.h"
+#include "4.prototype.h"
 
 int main(int argc, char** argv)
 {
@@ -10,8 +11,11 @@ int main(int argc, char** argv)
 	//_AbstractFactoryPattern::AbstractFactoryPattern abstractFactoryPattern;
 	//abstractFactoryPattern.on_created();
 
-	_BuilderPattern::BuilderPattern builderPattern;
-	builderPattern.on_created();
+	//_BuilderPattern::BuilderPattern builderPattern;
+	//builderPattern.on_created();
+
+	_PrototypePattern::PrototypePattern prototypePattern;
+	prototypePattern.on_created();
 
 	return 0;
 }

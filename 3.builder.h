@@ -66,6 +66,8 @@ namespace _BuilderPattern
 			chicken->set_body(body);
 			chicken->set_hat(hat);
 
+			cout << "Green chicken created!" << endl;
+
 			return chicken;
 		}
 	};
@@ -86,6 +88,8 @@ namespace _BuilderPattern
 			chicken->set_weapon(weapon);
 			chicken->set_body(body);
 			chicken->set_hat(hat);
+
+			cout << "Custom chicken created!" << endl;
 
 			return chicken;
 		}
