@@ -130,11 +130,13 @@
   <ItemGroup>
     <ClCompile Include="1.factory_method.cpp" />
     <ClCompile Include="2.abstract_factory.cpp" />
+    <ClCompile Include="3.builder.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1.factory_method.h" />
     <ClInclude Include="2.abstract_factory.h" />
+    <ClInclude Include="3.builder.h" />
     <ClInclude Include="example.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
