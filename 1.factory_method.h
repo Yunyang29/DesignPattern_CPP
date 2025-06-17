@@ -131,15 +131,15 @@ namespace _FactoryMethodPattern
 			}
 		}
 	};
-
-	class FactoryMethodPattern : public Example
-	{
-	public:
-		FactoryMethodPattern();
-
-		void on_created() override;
-
-	private:
-		vector<_FactoryMethodPattern::GameObject*> game_obj_list;
-	};
 }
+
+class FactoryMethodPattern : public Example
+{
+public:
+	FactoryMethodPattern();
+
+	void on_created() override;
+
+private:
+	vector<_FactoryMethodPattern::GameObject*> game_obj_list;
+};

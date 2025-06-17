@@ -21,13 +21,13 @@ void _AbstractFactoryPattern::Slime::on_create()
 
 Slime::~Slime() = default;
 
-_AbstractFactoryPattern::AbstractFactoryPattern::AbstractFactoryPattern()
+AbstractFactoryPattern::AbstractFactoryPattern()
 {
 	SmallIceSlimeDefFactory small_ice_slime_def_factory;
 	slime = new Slime(&small_ice_slime_def_factory);
 }
 
-void _AbstractFactoryPattern::AbstractFactoryPattern::on_created()
+void AbstractFactoryPattern::on_created()
 {
 	slime->on_create();
 }

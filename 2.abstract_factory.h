@@ -125,12 +125,13 @@ namespace _AbstractFactoryPattern
 
 #pragma endregion
 
-	class AbstractFactoryPattern : public Example
-	{
-	public:
-		AbstractFactoryPattern();
-		void on_created() override;
-	private:
-		Slime* slime;
-	};
 }
+
+class AbstractFactoryPattern : public Example
+{
+public:
+	AbstractFactoryPattern();
+	void on_created() override;
+private:
+	_AbstractFactoryPattern::Slime* slime;
+};

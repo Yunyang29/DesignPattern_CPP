@@ -76,11 +76,8 @@ namespace _BuilderPattern
 	{
 	public:
 		void init_weapon() override;
-
 		void init_body() override;
-
 		void init_hat() override;
-
 		Chicken* build() override
 		{
 			Chicken* chicken = new Chicken();
@@ -94,15 +91,15 @@ namespace _BuilderPattern
 			return chicken;
 		}
 	};
-
-	class BuilderPattern : public Example
-	{
-	public:
-		BuilderPattern();
-		void on_created() override;
-	private:
-		Chicken* chicken = nullptr;
-		GreenChickenBuilder green_chicken_builder;
-		CustomChickenBuilder custom_chicken_builder;
-	};
 }
+
+class BuilderPattern : public Example
+{
+public:
+	BuilderPattern();
+	void on_created() override;
+private:
+	_BuilderPattern::Chicken* chicken = nullptr;
+	_BuilderPattern::GreenChickenBuilder green_chicken_builder;
+	_BuilderPattern::CustomChickenBuilder custom_chicken_builder;
+};

@@ -4,6 +4,9 @@
     <Filter Include="1.creational">
       <UniqueIdentifier>{cc94829f-1096-4415-b5d7-fae80374183a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="2.structural">
+      <UniqueIdentifier>{fa3401c8-e095-4b5c-8372-1c47fa8129ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="1.factory_method.cpp">
@@ -16,7 +19,18 @@
     <ClCompile Include="3.builder.cpp">
       <Filter>1.creational</Filter>
     </ClCompile>
-    <ClCompile Include="4.prototype.cpp" />
+    <ClCompile Include="4.prototype.cpp">
+      <Filter>1.creational</Filter>
+    </ClCompile>
+    <ClCompile Include="5.singleton.cpp">
+      <Filter>1.creational</Filter>
+    </ClCompile>
+    <ClCompile Include="1.adapter.cpp">
+      <Filter>2.structural</Filter>
+    </ClCompile>
+    <ClCompile Include="2.bridge.cpp">
+      <Filter>2.structural</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="2.abstract_factory.h">
@@ -29,6 +43,17 @@
     <ClInclude Include="3.builder.h">
       <Filter>1.creational</Filter>
     </ClInclude>
-    <ClInclude Include="4.prototype.h" />
+    <ClInclude Include="4.prototype.h">
+      <Filter>1.creational</Filter>
+    </ClInclude>
+    <ClInclude Include="5.singleton.h">
+      <Filter>1.creational</Filter>
+    </ClInclude>
+    <ClInclude Include="1.adapter.h">
+      <Filter>2.structural</Filter>
+    </ClInclude>
+    <ClInclude Include="2.bridge.h">
+      <Filter>2.structural</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -37,19 +37,18 @@ namespace _PrototypePattern
 		string body;
 		string hat;
 	};
-
-
-	class PrototypePattern : public Example
-	{
-	public:
-		PrototypePattern();
-		~PrototypePattern();
-
-		void on_created() override;
-
-	private:
-		vector<_PrototypePattern::Chicken*> chicken_list;
-		_PrototypePattern::Chicken* prototype_chicken = nullptr;
-	};
-
 }
+
+
+class PrototypePattern : public Example
+{
+public:
+	PrototypePattern();
+	~PrototypePattern();
+
+	void on_created() override;
+
+private:
+	vector<_PrototypePattern::Chicken*> chicken_list;
+	_PrototypePattern::Chicken* prototype_chicken = nullptr;
+};
